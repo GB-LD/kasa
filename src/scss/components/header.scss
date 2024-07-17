@@ -1,0 +1,51 @@
+$layout-breakpoint-small: 960px;
+
+header {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 27px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $layout-breakpoint-small) {
+        padding: 45px 100px 0 100px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 145px;
+        height: 47px;
+
+        @media (min-width: $layout-breakpoint-small) {
+            width: 210px;
+            height: 68px;
+        }
+    }
+
+    nav {
+        font-size: 12px;
+
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+
+            &.active {
+                text-decoration: underline;
+            }
+        }
+
+        a:first-child {
+          margin-right: 26px;
+
+            @media (min-width: $layout-breakpoint-small) {
+                margin-right: 57px;
+            }
+        }
+    }
+}
