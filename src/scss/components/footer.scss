@@ -1,0 +1,21 @@
+$layout-breakpoint-small: 960px;
+
+footer {
+    background: black;
+    padding: 66px 0 29px 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+    @media (min-width: $layout-breakpoint-small) {
+        font-size: 24px;
+    }
+
+    img {
+        height: 40px;
+        width: 122px;
+    }
+}

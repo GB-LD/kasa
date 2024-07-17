@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import Error404Page from './pages/Error404Page';
 import AccomodationPage from './pages/AccomodationPage';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import './scss/app.scss';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/accomodation/:id" element={<AccomodationPage />}></Route>
           <Route path="*" element={<Error404Page />}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   )
