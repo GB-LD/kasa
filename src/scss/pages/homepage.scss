@@ -1,0 +1,82 @@
+main {
+    padding: 0 20px;
+    margin-bottom: 27px;
+
+    @media (min-width: $layout-breakpoint-small) {
+        padding: 0 100px;
+        margin-bottom: 50px;
+    }
+
+    section.hero {
+        background-image: url('../assets/images/hero-img.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 111px;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 50px;
+            height: 100px;
+        }
+
+        h1 {
+            z-index: 10;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+            padding: 30px;
+
+            @media (min-width: $layout-breakpoint-small) {
+                font-weight: 800;
+                font-size: 40px;
+                padding: 31px 0;
+            }
+        }
+
+        @media (min-width: $layout-breakpoint-small) {
+            padding: 0 100px;
+            height: 223px;
+            border-radius: 1.5rem;
+            margin-bottom: 43px;
+        }
+    }
+
+    .accomodation-list {
+
+        @media (min-width: $layout-breakpoint-small) {
+            background: #F6F6F6;
+            padding: 56px 50px;
+            border-radius: 1.5rem;
+        }
+
+        ul {
+            display: grid;
+            list-style: none;
+            padding: 0;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+            justify-items: center;
+
+            @media (min-width: $layout-breakpoint-small) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 50px;
+            }
+        }
+    }
+}
