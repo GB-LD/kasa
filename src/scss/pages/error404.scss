@@ -1,0 +1,51 @@
+.wrapper-error {
+    color: $kasa-red-500;
+    margin-top: 86px;
+
+    h1 {
+        width: fit-content;
+        font-size: 96px;
+        font-weight: bold;
+        margin:auto;
+        margin-bottom: 113px;
+
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 288px;
+        }
+    }
+
+    h2 {
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 500;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 113px;
+
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 36px;
+        }
+    }
+
+    .homepage-link {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        padding-bottom: 113px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        text-decoration: underline;
+
+        &:visited, &:active {
+            color: black;
+        }
+
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 18px;
+        }
+
+    }
+
+}

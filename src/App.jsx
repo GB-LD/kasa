@@ -24,13 +24,13 @@ useEffect(() => {
     <>
       <BrowserRouter>
       <div className="page-wrapper">
-      <Header></Header>
-        <Routes>
-          <Route path="/" element={<HomePage accomodations={data} />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
-          <Route path="/accomodation/:id" element={<AccomodationPage />}></Route>
-          <Route path="*" element={<Error404Page />}></Route>
-        </Routes>
+        <Header></Header>
+          <Routes>
+            <Route path="/" element={<HomePage accomodations={data} />}></Route>
+            <Route path="/about" element={<AboutPage />}></Route>
+            <Route path="/accomodation/:id" element={<AccomodationPage />}></Route>
+            <Route path="*" element={<Error404Page />}></Route>
+          </Routes>
         <Footer></Footer>
       </div>
       </BrowserRouter>

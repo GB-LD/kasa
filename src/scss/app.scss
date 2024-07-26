@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $layout-breakpoint-small: 770px;
+$kasa-red-500: #FF6060;
 
 @import "./normalize.scss";
+@import "./pages/app.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./pages/homepage.scss";
 @import "./components/accomodationCard.scss";
+@import "./pages/error404.scss";
