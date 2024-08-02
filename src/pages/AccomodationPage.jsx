@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 function AccomodationPage() {
-    const params = useParams();
-    console.log(params);
+    let location = useLocation();
+    const accomodationData = location.state;
 
     return (
-        <div>AccomodationPage</div>
+        <div>{ accomodationData.title }</div>
     )
 }
 

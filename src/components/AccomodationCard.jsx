@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 const AccomodationCard = (props) => {
-  
-    return (
+  const accomodationData = props.data ;
+
+  return (
     <li className="accomodation-card">
-        {/* {props.children} */}
-        <img src={props.cover} alt=""/>
-        <span>{props.children}</span>
+      <Link className="accomodation-card-link" to={`/accomodation/${accomodationData.id}`}  state={accomodationData} >
+          <img src={accomodationData.cover} alt=""/>
+          <span>{accomodationData.title}</span>
+      </Link>
     </li>
   )
 }

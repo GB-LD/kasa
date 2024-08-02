@@ -5,8 +5,6 @@ const HomePage = (props) => {
   // eslint-disable-next-line react/prop-types
   const {accomodations} = props;
 
-  console.log(accomodations);
-
   return (
     <main>
        <section className="hero">
@@ -14,7 +12,7 @@ const HomePage = (props) => {
        </section>
        <section className="accomodation-list">
           <ul>
-            {accomodations && accomodations.map(accomodation => <AccomodationCard cover={accomodation.cover} key={accomodation.id}>{accomodation.title}</AccomodationCard>)}
+            {accomodations && accomodations.map(accomodationData => <AccomodationCard data={accomodationData} key={accomodationData.id}></AccomodationCard>)}
           </ul>
        </section>
     </main>
