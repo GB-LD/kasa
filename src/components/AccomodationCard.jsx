@@ -5,7 +5,7 @@ const AccomodationCard = (props) => {
 
   return (
     <li className="accomodation-card">
-      <Link className="accomodation-card-link" to={`/accomodation/${accomodationData.id}`}  state={accomodationData} >
+      <Link className="accomodation-card-link" to={`/accomodation/${accomodationData.id}`} state={accomodationData} >
           <img src={accomodationData.cover} alt=""/>
           <span>{accomodationData.title}</span>
       </Link>

@@ -1,0 +1,17 @@
+.tag-list {
+    color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+
+    li {
+        font-size: 10px;
+        font-weight: 600;
+        background: $kasa-red-500;
+        width: fit-content;
+        padding: 3px 22px;
+        border-radius: .75rem;
+    }
+}

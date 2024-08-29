@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $layout-breakpoint-small: 770px;
+$layout-breakpoint-desktop: 1320px;
 $kasa-red-500: #FF6060;
 
 @import "./normalize.scss";
@@ -11,4 +12,5 @@ $kasa-red-500: #FF6060;
 @import "./components/accomodationCard.scss";
 @import "./pages/error404.scss";
 @import "./pages/accomodationPage.scss";
-@import "./components/imagesSlider.scss"
+@import "./components/imagesSlider.scss";
+@import "./components/tagsList.scss";

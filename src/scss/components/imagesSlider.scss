@@ -2,11 +2,15 @@
     position: relative;
     width: auto;
     height: 255px;
+    margin-bottom: 15px;
 
     @media (min-width: $layout-breakpoint-small) {
+        max-width: 1240px;
+        margin: auto;
         height: 415px;
         border-radius: 1.5rem;
         overflow: hidden;
+        margin-bottom: 30px;
     }
 
     img {
