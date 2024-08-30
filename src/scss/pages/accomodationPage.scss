@@ -1,7 +1,8 @@
 .accomodation-page-wrapper {
     padding: 0 20px;
-    
-    section {
+
+    section.section-general {
+        margin: 0 auto 13px auto;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -17,6 +18,20 @@
         }
     }
 
+    section.section-details {
+        margin: 0 auto 13px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (min-width: $layout-breakpoint-small) {
+            max-width: 1240px;
+            margin: 0 auto 27px auto;
+            flex-direction: row;
+            gap: 76px;
+        }
+    }
+
     .accomodation-title {
         grid-area: a;
 
@@ -28,7 +43,7 @@
 
             @media (min-width: $layout-breakpoint-small) {
                 font-size: 36px;
-                margin: 0;
+                margin-bottom: 10px;
             }
         }
 
@@ -84,7 +99,7 @@
         }
 
         li {
-            padding: 3px;
+            padding: 0 3px;
 
             img {
                 vertical-align: middle;

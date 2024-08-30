@@ -13,5 +13,9 @@
         width: fit-content;
         padding: 3px 22px;
         border-radius: .75rem;
+
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 14px;
+        }
     }
 }
