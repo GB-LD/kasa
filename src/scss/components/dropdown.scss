@@ -52,11 +52,12 @@
       }
 
     img {
+        transform: rotate(180deg);
         transition: transform 150ms;
     }
 
     img.dropdown-open {
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
 }
 

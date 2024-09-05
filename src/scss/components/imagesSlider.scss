@@ -27,6 +27,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
 
         @media (min-width: $layout-breakpoint-small) {
             width: 80px;
