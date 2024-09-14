@@ -15,7 +15,7 @@ function App() {
 const [data, setData] = useState();
 
 useEffect(() => {
-  fetch('../src/data/data.json')
+  fetch('../public/data/data.json')
   .then(response => response.json())
   .then(data => setData(data));
 }, []);
@@ -28,7 +28,7 @@ useEffect(() => {
           <Routes>
             <Route path="/" element={<HomePage accomodations={data} />}></Route>
             <Route path="/about" element={<AboutPage />}></Route>
-            <Route path="/accomodation/:id" element={<AccomodationPage />}></Route>
+            <Route path="/accomodation/:id" element={<AccomodationPage data={data} />}></Route>
             <Route path="*" element={<Error404Page />}></Route>
           </Routes>
         <Footer></Footer>

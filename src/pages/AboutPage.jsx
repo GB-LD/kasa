@@ -6,10 +6,10 @@ const AboutPage = () => {
   return (
       <main className="main-about">
       <section className="hero-about">
-        <h1>Chez vous, partout et ailleurs</h1>
+
       </section>
       <section className="dropdown-list">
-        <Dropdown dropdownTitle="fabilité" dropdownContent={fakeContent}></Dropdown>
+        <Dropdown dropdownTitle="fiabilité" dropdownContent={fakeContent}></Dropdown>
         <Dropdown dropdownTitle="respect" dropdownContent={fakeContent}></Dropdown>
         <Dropdown dropdownTitle="service" dropdownContent={fakeContent}></Dropdown>
         <Dropdown dropdownTitle="sécurité" dropdownContent={fakeContent}></Dropdown>

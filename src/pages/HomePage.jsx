@@ -12,7 +12,9 @@ const HomePage = (props) => {
        </section>
        <section className="accomodation-list">
           <ul>
-            {accomodations && accomodations.map(accomodationData => <AccomodationCard data={accomodationData} key={accomodationData.id}></AccomodationCard>)}
+          {accomodations && accomodations.map(accomodationData => (
+            <AccomodationCard key={accomodationData.id} data={accomodationData} />
+          ))}
           </ul>
        </section>
     </main>
