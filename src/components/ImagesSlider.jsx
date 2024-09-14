@@ -23,12 +23,19 @@ function handlePrevClick() {
   return (
     <div className='slider-wrapper'>
         <img src={images[sliderIndex]} alt="" />
-        <button onClick={handlePrevClick}>
-            <img src="/src/assets/icons/chevron-left.svg" alt="boutton photo précédente" />
-        </button>
-        <button onClick={handleNextImgClick}>
-            <img src="/src/assets/icons/chevron-right.svg" alt="boutton photo suivante" />
-        </button>
+        {images.length > 1 && (
+        <>
+            <button onClick={handlePrevClick}>
+            <img src="/src/assets/icons/chevron-left.svg" alt="Previous" />
+            </button>
+            <button onClick={handleNextImgClick}>
+            <img src="/src/assets/icons/chevron-right.svg" alt="Next" />
+            </button>
+        </>
+        )}
+        <div className="image-counter">
+            {sliderIndex + 1}/{images.length}
+        </div>
     </div>
   )
 }

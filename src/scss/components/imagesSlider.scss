@@ -3,14 +3,29 @@
     width: auto;
     height: 255px;
     margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 1rem;
 
     @media (min-width: $layout-breakpoint-small) {
         max-width: 1240px;
         margin: auto;
         height: 415px;
         border-radius: 1.5rem;
-        overflow: hidden;
         margin-bottom: 30px;
+    }
+
+
+    .image-counter {
+        display: none;
+        color: white;
+        position: absolute;
+        left: 50%;
+        bottom:25px;
+        transform: translateX(-50%);
+
+        @media (min-width: $layout-breakpoint-small) {
+            display: block;
+        }
     }
 
     img {
